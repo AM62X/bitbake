@@ -805,15 +805,15 @@ overview of their function and contents.
 
       The following example uses a complete regular expression to tell
       BitBake to ignore all recipe and recipe append files in the
-      ``meta-ti/recipes-misc/`` directory::
+      ``meta-myir/recipes-misc/`` directory::
 
-         BBMASK = "meta-ti/recipes-misc/"
+         BBMASK = "meta-myir/recipes-misc/"
 
       If you want to mask out multiple directories or recipes, you can
       specify multiple regular expression fragments. This next example
       masks out multiple directories and individual recipes::
 
-         BBMASK += "/meta-ti/recipes-misc/ meta-ti/recipes-ti/packagegroup/"
+         BBMASK += "/meta-myir/recipes-misc/ meta-myir/recipes-ti/packagegroup/"
          BBMASK += "/meta-oe/recipes-support/"
          BBMASK += "/meta-foo/.*/openldap"
          BBMASK += "opencv.*\.bbappend"
